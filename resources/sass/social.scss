@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('fonts/gilroy.css');
+}
+body {
+    font-family: 'Gilroy', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+.background-image {
+    position: fixed;
+    filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+    transform: scale(1.02);
+    z-index: -1;
+    background-size: cover !important;
+}
+.social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+}
+.cover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 60%;
+    -webkit-transform: translateY(60%);
+    -ms-transform: translateY(60%);
+    transform: translateY(60%);
+}
+.shadow {
+    box-shadow: -3px 5px 5px 0 rgba(5, 5, 5, 0.75);
+}
+.cover__image {
+    box-shadow: -3px 5px 5px 0 rgba(5, 5, 5, 0.4);
+}
+.social-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    position: relative;
+}
+.cover__header {
+    font-weight: 800;
+    margin: 0;
+}
+.cover__desc {
+    text-align: center;
+    font-weight: 100;
+    font-size: 34px;
+    margin: 0;
+}
+.social-bar__card {
+    cursor: pointer;
+    display: flex;
+    width: 160px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 6px;
+    justify-content: center;
+    margin-bottom: 22px;
+    margin-right: 20px;
+}
+.social-bar__card img {
+    margin-top: 5px;
+}
+.social-bar__card p {
+    font-weight: 200;
+    display: flex;
+    margin: 8px;
+    color: white;
+    align-items: center;
+}
+.icon-24 {
+    width: 24px;
+    height: 24px;
+}
+.cover__label {
+    position: absolute;
+    top: 92%
+}
+.cover__header {
+    text-shadow: -2px 2px 16px rgba(0, 0, 0, 0.5);
+    font-size: 44px;
+}
+.cover__desc {
+    text-shadow: -2px 2px 16px rgba(0, 0, 0, 1);
+    font-size: 28px;
+}
